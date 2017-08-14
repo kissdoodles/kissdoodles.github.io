@@ -1528,7 +1528,8 @@ button.close {
 }
 
 .footer_bottom_area {
-    background-color: #111;
+    /*background-color: #111;*/
+    background-color: #cc3e3e; 
 }
 
 .footer_bottom {
