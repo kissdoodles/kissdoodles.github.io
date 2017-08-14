@@ -26,7 +26,8 @@ body a:hover{
 }
 /*-- banner --*/
 .banner{
-	background:url(../images/banner.jpg) no-repeat 0px 0px;
+	/*background:url(../images/banner.png) no-repeat 0px 0px;*/
+	background: rgba(0,0,0,0.89);
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -162,7 +163,7 @@ body a:hover{
     padding: 0;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color:#A0CC59 !important;
+    color:#e25846 !important;
 }
 .navbar {
     margin-bottom: 0;
@@ -189,7 +190,7 @@ body a:hover{
     padding: 20px 25px 0;
 }
 .navbar-default .navbar-nav > li > a.active {
-	color:#A0CC59 !important;
+	color:#e25846 !important;
 }
 /*-- //nav --*/
 .logo a{
@@ -286,7 +287,7 @@ body a:hover{
 }
 .banner-bottom-grid1 h3{
 	font-size: 1.5em;
-    color:#A0CC59;
+    color:#e25846;
     padding-bottom: .5em;
     border-bottom: 5px double #E9E9E9;
     margin: 0;
@@ -323,7 +324,7 @@ body a:hover{
     background:#83BFA6 ;
 }
 .banner-bottom-grid:hover .banner-bottom-grid1-sub{
-	background:#A0CC59;
+	background:#e25846;
 }
 .banner-bottom-grid:hover .banner-bottom-grid1 h3,.banner-bottom-grid:hover .banner-bottom-grid1 p{
 	color:#fff;
@@ -349,7 +350,7 @@ body a:hover{
 	background:#D07B59;
 }
 .banner-bottom-grid-boxs{
-	background:#A0CC59;
+	background:#e25846;
 }
 .banner-bottom-grid-box h1,.banner-bottom-grid-box h2{
 	text-transform:capitalize;
@@ -606,7 +607,7 @@ body a:hover{
 }
 .contact-grid h4{
 	font-size:1.5em;
-	color:#A0CC59;
+	color:#e25846;
 	margin:1em 0;
 }
 .contact-grid p,.contact-grid a{
@@ -1145,7 +1146,7 @@ h2.resp-accordion {
 /*-- single --*/
 .single h3,.testimonials h3,.features h3,.featured-services h3,.sevices-list h3{
 	font-size:2em;
-	color:#A0CC59;
+	color:#e25846;
 	margin:0;
 	text-transform:capitalize;
 	letter-spacing: 2px;
@@ -1221,7 +1222,7 @@ h2.resp-accordion {
 	-ms-transition: 0.5s all;
 }
 .table-form input[type="submit"]:hover{
-	background:#A0CC59;
+	background:#e25846;
 }
 .top-comment-left{
 	float: left;
@@ -1253,7 +1254,7 @@ h2.resp-accordion {
 	-ms-transition: 0.5s all;
 }
 .top-comment-right ul li a:hover{
-	color:#A0CC59;
+	color:#e25846;
 }
 .top-comment-right p {
   color:#999;
@@ -1491,7 +1492,7 @@ figure.effect-julia:hover p {
 	line-height:1.8em;
 }
 p.great{
-	color:#A0CC59;
+	color:#e25846;
 }
 .social_icons1{
 	margin:0 !important;
