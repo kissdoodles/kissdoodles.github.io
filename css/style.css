@@ -32,7 +32,8 @@ body a:hover{
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
-	min-height:900px;
+	/*min-height:900px;*/
+	min-height: 100vh;
 }
 .banner_top {
     margin: 1em 0 3em;
