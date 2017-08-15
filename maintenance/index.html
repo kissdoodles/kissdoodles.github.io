@@ -31,7 +31,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
-
+    <style type="text/css">
+        @media only screen and (max-width: 768px) {
+            img#logo_main {
+                height: 50px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -48,8 +54,8 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="cooming_soon_content text-center">
-                                <div class="c_logo hidden-xs">
-                                    <img src="img/core-img/kissdoodles.png" alt="">
+                                <div class="c_logo"> <!-- hidden-xs -->
+                                    <img id="logo_main" src="img/core-img/kissdoodles.png" alt="">
                                 </div>
                                 <div class="subscribe_bar wow fadeInUp" data-wow-delay="0.2s">
                                     <img src="img/bg-img/maintenance-mode.png" alt="">
