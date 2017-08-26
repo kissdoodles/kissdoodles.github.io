@@ -1,171 +1,816 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<!-- 
-<link href="https://fonts.googleapis.com/css?family=Bangers|Berkshire+Swash|Josefin+Slab|Sedgwick+Ave+Display" rel="stylesheet">
-font-family: 'Sedgwick Ave Display', cursive;
-font-family: 'Josefin Slab', serif;
-font-family: 'Berkshire Swash', cursive;
-font-family: 'Bangers', cursive;
- -->
-
-<!-- Mirrored from demo.designing-world.com/classy-baa/classy/onepager/index-youtube-video.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Aug 2017 15:55:27 GMT -->
+<html dir="ltr" lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- Title  -->
-    <title>Kissdoodles | Home</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+	<meta name="author" content="SemiColonWeb" />
 
-    <!-- Favicon  -->
-    <link rel="shortcut icon" href="img/core-img/favicon.ico">
-
-    <!-- >>>>>>>>>>>>>>>> All CSS Files <<<<<<<<<<<<<<<< -->
-
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="css/core-style.css">
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Responsive css -->
-    <link rel="stylesheet" href="css/responsive.css">
-
-    <!-- Switch Fonts via CSS Import system -->
-    <link href="css/fonts/opensans.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Sedgwick+Ave+Display" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Josefin+Slab|Sedgwick+Ave+Display" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Berkshire+Swash|Josefin+Slab|Sedgwick+Ave+Display" rel="stylesheet">
-    <!--[if IE]>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="canvashtml-cdn.semicolonweb.com/main.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
-    <style type="text/css">
-        @media only screen and (max-width: 768px) {
-            .logo_area img {
-                height: 50px;
-            }
-        }
-    </style>
+
+	<!-- Document Title
+	============================================= -->
+	<title>Kissdoodles | Home</title>
+
+
 </head>
 
-<body>
-    <!-- Preloader Start -->
-    <div id="preloader">
-        <div class="classy-load"></div>
-    </div>
+<body class="stretched">
 
-    <!-- >>>>>>>>>>>>>>>> Header Start <<<<<<<<<<<<<<<<< -->
-    <header class="header_area transparent-menu">
-        <!-- Main Header Area Start -->
-        <div class="main_header_area animated">
-            <div class="container">
-                <div class="row">
-                    <!-- Logo Area Start -->
-                    <div class="col-md-2 col-9">
-                        <div class="logo_area">
-                            <a href="index.html"><img src="img/core-img/kissdoodles.png" alt=""></a>
-                        </div>
-                    </div>
-                    <!-- Menu Area Start -->
-                    <div class="col-md-10 col-12">
-                        <div class="main_menu_area">
-                            <div class="mainmenu">
-                                <nav>
-                                    <ul id="nav" style="font-family: 'Bangers', cursive;">
-                                        <!-- <li class="current_page_item"><a href="#home">Home</a></li> -->
-                                        <li><a href="about.html">About</a></li>
-                                        <!-- <li><a href="#service">Service</a></li>
-                                        <li><a href="#work">Works</a></li>
-                                        <li><a href="#advisor">Team</a></li>
-                                        <li><a href="#price">Price</a></li>
-                                        <li><a href="#blog">News</a></li> -->
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- >>>>>>>>>>>>>>>> Header End <<<<<<<<<<<<<<<< -->
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
 
-    <!-- >>>>>>>>>>>>>>>> Welcome Area Start <<<<<<<<<<<<<<<< -->
-    <section class="welcome_area full_height yt_video_background clearfix jarallax" id="home" style="background-image: url(img/bg-img/agency-2.jpg);">
-        <!-- YouTube Video URL -->
-        <a class="player" data-property="{videoURL:'https://youtu.be/X_93H_60Pls',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:false, startAt:3, opacity:1, quality:'default'}"></a>
-        <!-- Welcome Text -->
-        <div class="table">
-            <div class="table_cell">
-                <div class="welcome_text text-center">
-                    <h2 style="font-family: 'Bangers', cursive;">Kissdoodles</h2>
-                    <p style="font-family: 'Sedgwick Ave Display', cursive;">We design Awesome stuff.</p>
-                    <a href="about.html" class="btn default-button" role="button" style="font-family: 'Bangers', cursive;">Discover More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- >>>>>>>>>>>>>>>> Welcome Area End <<<<<<<<<<<<<<<< -->
+		<!-- Header
+		============================================= -->
+		<header id="header" class="transparent-header light full-header no-sticky">
 
-    <!-- moved to index-part.html -->
-    
-    <!-- >>>>>>>>>>>>>>>> Message Now Area Start <<<<<<<<<<<<<<<< -->
+			<div id="header-wrap">
 
-    <!-- >>>>>>>>>>>>>>>> Footer Area Start <<<<<<<<<<<<<<<< -->
-    <!-- <footer class="footer_area inline-style">
-        Bottom Footer Area Start
-        <div class="footer_bottom_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="social_links_area">
-                            <a href="#"><i class="ion-social-facebook" aria-hidden="true"></i> | Facebook</a>
-                            <a href="#"><i class="ion-social-twitter" aria-hidden="true"></i> | Twitter</a>
-                            <a href="#"><i class="ion-social-googleplus" aria-hidden="true"></i> | Google Plus</a>
-                            <a href="#"><i class="ion-social-dribbble" aria-hidden="true"></i> | Dribbble</a>
-                            <a href="#"><i class="ion-social-pinterest" aria-hidden="true"></i> | Pinterest</a>
-                            <a href="#"><i class="ion-social-facebook" aria-hidden="true"></i></a>
-                            <a href="#"><i class="ion-social-twitter" aria-hidden="true"></i></a>
-                            <a href="#"><i class="ion-social-googleplus" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="footer_bottom">
-                            <p>Made with <i class="fa fa-heart"></i> by <a href="#">DesigningWorld</a></p>
-                            <p style="font-weight: 600;">&copy 2017 Kissdoodles. All rights reserved. | Design by <a href="http://w3layouts.com">W3layouts.</a></p>
-                        </div>
-                        Bottom Footer Copywrite Text Area End
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer> -->
-    <!-- >>>>>>>>>>>>>>>> Footer Area End <<<<<<<<<<<<<<<< -->
+				<div class="container clearfix">
 
-    <!-- >>>>>>>>>>>>>>>> All jQuery Plugins <<<<<<<<<<<<<<<< -->
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-    <!-- jQuery (necessary for all JavaScript plugins) -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="../../../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugins js -->
-    <script src="js/plugins.js"></script>
-    <!-- Google Maps js -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk9KNSL1jTv4MY9Pza6w8DJkpI_nHyCnk" type="text/javascript"></script>
-    <!-- Google Maps Active js -->
-    <script src="js/map-active.js"></script>
-    <!-- Active js -->
-    <script src="js/active.js"></script>
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<!-- <a href="index.html" class="standard-logo" data-dark-logo="canvashtml-cdn.semicolonweb.com/images/logo-dark.png"><img src="canvashtml-cdn.semicolonweb.com/images/logo.png" alt="Canvas Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="canvashtml-cdn.semicolonweb.com/images/logo-dark@2x.png"><img src="canvashtml-cdn.semicolonweb.com/images/logo@2x.png" alt="Canvas Logo"></a> -->
+						<a href="index.html" class="standard-logo" data-dark-logo="images/kissdoodles.png"><img src="images/kissdoodles.png" alt="Canvas Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/kissdoodles.png"><img src="images/kissdoodles.png" alt="Canvas Logo"></a>
+					</div><!-- #logo end -->
 
-</body>
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu">
 
+						<!-- <ul>
+							<li class="current"><a href="index.html"><div>Home</div></a>
+								<ul>
+									<li><a href="index-corporate.html"><div>Home - Corporate</div></a>
+										<ul>
+											<li><a href="index-corporate.html"><div>Corporate - Layout 1</div></a></li>
+											<li><a href="index-corporate-2.html"><div>Corporate - Layout 2</div></a></li>
+											<li><a href="index-corporate-3.html"><div>Corporate - Layout 3</div></a></li>
+											<li><a href="index-corporate-4.html"><div>Corporate - Layout 4</div></a></li>
+										</ul>
+									</li>
+									<li><a href="index-portfolio.html"><div>Home - Portfolio</div></a>
+										<ul>
+											<li><a href="index-portfolio.html"><div>Portfolio - Layout 1</div></a></li>
+											<li><a href="index-portfolio-2.html"><div>Portfolio - Layout 2</div></a></li>
+											<li><a href="index-portfolio-3.html"><div>Portfolio - Masonry</div></a></li>
+											<li><a href="index-portfolio-4.html"><div>Portfolio - AJAX</div></a></li>
+										</ul>
+									</li>
+									<li><a href="index-blog.html"><div>Home - Blog</div></a>
+										<ul>
+											<li><a href="index-blog.html"><div>Blog - Layout 1</div></a></li>
+											<li><a href="index-blog-2.html"><div>Blog - Layout 2</div></a></li>
+											<li><a href="index-blog-3.html"><div>Blog - Layout 3</div></a></li>
+										</ul>
+									</li>
+									<li><a href="index-shop.html"><div>Home - Shop</div></a>
+										<ul>
+											<li><a href="index-shop.html"><div>Shop - Layout 1</div></a></li>
+											<li><a href="index-shop-2.html"><div>Shop - Layout 2</div></a></li>
+										</ul>
+									</li>
+									<li><a href="index-magazine.html"><div>Home - Magazine</div></a>
+										<ul>
+											<li><a href="index-magazine.html"><div>Magazine - Layout 1</div></a></li>
+											<li><a href="index-magazine-2.html"><div>Magazine - Layout 2</div></a></li>
+											<li><a href="index-magazine-3.html"><div>Magazine - Layout 3</div></a></li>
+										</ul>
+									</li>
+									<li><a href="landing.html"><div>Home - Landing Page</div></a>
+										<ul>
+											<li><a href="landing.html"><div>Landing Page - Layout 1</div></a></li>
+											<li><a href="landing-2.html"><div>Landing Page - Layout 2</div></a></li>
+											<li><a href="landing-3.html"><div>Landing Page - Layout 3</div></a></li>
+											<li><a href="landing-4.html"><div>Landing Page - Layout 4</div></a></li>
+											<li><a href="landing-5.html"><div>Landing Page - Layout 5</div></a></li>
+										</ul>
+									</li>
+									<li><a href="index-fullscreen-image.html"><div>Home - Full Screen</div></a>
+										<ul>
+											<li><a href="index-fullscreen-image.html"><div>Full Screen - Image</div></a></li>
+											<li><a href="index-fullscreen-slider.html"><div>Full Screen - Slider</div></a></li>
+											<li><a href="index-fullscreen-video.html"><div>Full Screen - Video</div></a></li>
+										</ul>
+									</li>
+									<li><a href="index-onepage.html"><div>Home - One Page</div></a>
+										<ul>
+											<li><a href="index-onepage.html"><div>One Page - Default</div></a></li>
+											<li><a href="index-onepage-2.html"><div>One Page - Submenu</div></a></li>
+											<li><a href="index-onepage-3.html"><div>One Page - Dots Style</div></a></li>
+										</ul>
+									</li>
+									<li><a href="index-wedding.html"><div>Home - Wedding</div></a></li>
+									<li><a href="index-restaurant.html"><div>Home - Restaurant</div></a></li>
+									<li><a href="index-events.html"><div>Home - Events</div></a></li>
+									<li><a href="index-parallax.html"><div>Home - Parallax</div></a></li>
+									<li><a href="index-app-showcase.html"><div>Home - App Showcase</div></a></li>
+									<li><a href="index-boxed.html"><div>Home - Boxed Layout</div></a></li>
+								</ul>
+							</li>
+							<li><a href="#"><div>Features</div></a>
+								<ul>
+									<li><a href="#"><div><i class="icon-stack"></i>Sliders</div></a>
+										<ul>
+											<li><a href="slider-revolution.html"><div>Revolution Slider</div></a>
+												<ul>
+													<li><a href="rs-demo-premium-concept.html"><div>Premium Templates</div></a></li>
+													<li><a href="slider-revolution.html"><div>Full Screen</div></a></li>
+													<li><a href="slider-revolution-fullwidth.html"><div>Full Width</div></a></li>
+													<li><a href="slider-revolution-kenburns.html"><div>Kenburns Effect</div></a></li>
+													<li><a href="slider-revolution-html5-videos.html"><div>HTML5 Video</div></a></li>
+												</ul>
+											</li>
+											<li><a href="slider-canvas.html"><div>Canvas Slider</div></a>
+												<ul>
+													<li><a href="slider-canvas.html"><div>Full Width</div></a></li>
+													<li><a href="slider-canvas-fade.html"><div>Fade Transition</div></a></li>
+													<li><a href="slider-canvas-autoplay.html"><div>Autoplay Feature</div></a></li>
+													<li><a href="slider-canvas-video-event.html"><div>Custom Video Event</div></a></li>
+													<li><a href="slider-canvas-pagination.html"><div>Pagination Navigation</div></a></li>
+													<li><a href="slider-canvas-3.html"><div>3 Columns</div></a></li>
+													<li><a href="slider-canvas-4.html"><div>4 Columns</div></a></li>
+													<li><a href="slider-canvas-5.html"><div>5 Columns</div></a></li>
+												</ul>
+											</li>
+											<li><a href="slider-flex.html"><div>Flex Slider</div></a>
+												<ul>
+													<li><a href="slider-flex.html"><div>Default Layout</div></a></li>
+													<li><a href="slider-flex-thumbs.html"><div>with Thumbs</div></a></li>
+												</ul>
+											</li>
+											<li><a href="slider-owl.html"><div>Owl Slider</div></a>
+												<ul>
+													<li><a href="slider-owl-full.html"><div>Full Width</div></a></li>
+													<li><a href="slider-owl.html"><div>Boxed Width</div></a></li>
+													<li><a href="slider-owl-videos.html"><div>Video Slider</div></a></li>
+												</ul>
+											</li>
+											<li><a href="static-parallax.html"><div>Static Media</div></a>
+												<ul>
+													<li><a href="static-parallax.html"><div>Static - Parallax</div></a></li>
+													<li><a href="static-image.html"><div>Static - Image</div></a></li>
+													<li><a href="static-thumbs-grid.html"><div>Static - Thumb Gallery</div></a></li>
+													<li><a href="static-html5-video.html"><div>Static - HTML5 Video</div></a></li>
+													<li><a href="static-embed-video.html"><div>Static - Embedded Video</div></a></li>
+												</ul>
+											</li>
+											<li><a href="slider-camera.html"><div>Camera Slider</div></a></li>
+											<li><a href="slider-elastic.html"><div>Elastic Slider</div></a></li>
+											<li><a href="slider-nivo.html"><div>Nivo Slider</div></a></li>
+										</ul>
+									</li>
+									<li><a href="widgets.html"><div><i class="icon-gift"></i>Widgets</div></a>
+										<ul>
+											<li><a href="widgets.html"><div>Links</div></a></li>
+											<li><a href="widgets.html"><div>Flickr Photostream</div></a></li>
+											<li><a href="widgets.html"><div>Dribbble Shots</div></a></li>
+											<li><a href="widgets.html"><div>Instagram Feed</div></a></li>
+											<li><a href="widgets.html"><div>Posts List</div></a></li>
+											<li><a href="widgets.html"><div>Twitter Feed</div></a></li>
+											<li><a href="widgets.html"><div>Tabbed Widgets</div></a></li>
+											<li><a href="widgets.html"><div>Carousel</div></a></li>
+											<li><a href="widgets.html"><div>Subscribers</div></a></li>
+											<li><a href="widgets.html"><div>Social Icons</div></a></li>
+											<li><a href="widgets.html"><div>Testimonials</div></a></li>
+											<li><a href="widgets.html"><div>Quick Contact</div></a></li>
+											<li><a href="widgets.html"><div>Tags Cloud</div></a></li>
+											<li><a href="widgets.html"><div>Video Embeds</div></a></li>
+											<li><a href="widgets.html"><div>Raw Text/HTML</div></a></li>
+										</ul>
+									</li>
+									<li><a href="#"><div><i class="icon-umbrella"></i>Headers</div></a>
+										<ul>
+											<li><a href="header-light.html"><div>Light Version</div></a></li>
+											<li><a href="header-dark.html"><div>Dark Version</div></a></li>
+											<li><a href="header-transparent.html"><div>Transparent</div></a></li>
+											<li><a href="header-semi-transparent.html"><div>Semi Transparent</div></a>
+												<ul>
+													<li><a href="header-semi-transparent.html"><div>Light Version</div></a></li>
+													<li><a href="header-semi-transparent-dark.html"><div>Dark Version</div></a></li>
+												</ul>
+											</li>
+											<li><a href="header-side-left.html"><div>Left Side Header</div></a>
+												<ul>
+													<li><a href="header-side-left.html"><div>Fixed Position</div></a></li>
+													<li><a href="header-side-left-open.html"><div>OnClick Open</div></a></li>
+													<li><a href="header-side-left-open-push.html"><div>Push Content</div></a></li>
+												</ul>
+											</li>
+											<li><a href="header-side-right.html"><div>Right Side Header</div></a>
+												<ul>
+													<li><a href="header-side-right.html"><div>Fixed Position</div></a></li>
+													<li><a href="header-side-right-open.html"><div>OnClick Open</div></a></li>
+													<li><a href="header-side-right-open-push.html"><div>Push Content</div></a></li>
+												</ul>
+											</li>
+											<li><a href="header-floating.html"><div>Floating Version</div></a></li>
+											<li><a href="static-sticky.html"><div>Static Sticky</div></a></li>
+											<li><a href="responsive-sticky.html"><div>Responsive Sticky</div></a></li>
+											<li><a href="logo-changer.html"><div>Alternate Logos</div></a></li>
+											<li><a href="alternate-mobile-menu.html"><div>Alternate Mobile Menu</div></a></li>
+										</ul>
+									</li>
+									<li><a href="side-panel.html"><div><i class="icon-line-layout"></i>Side Panel</div></a>
+										<ul>
+											<li><a href="side-panel-left-overlay.html"><div>Left Overlay</div></a></li>
+											<li><a href="side-panel-left-push.html"><div>Left Push</div></a></li>
+											<li><a href="side-panel-right-overlay.html"><div>Right Overlay</div></a></li>
+											<li><a href="side-panel.html"><div>Right Push</div></a></li>
+											<li><a href="side-panel-light.html"><div>Light Background</div></a></li>
+										</ul>
+									</li>
+									<li><a href="mega-menu.html"><div><i class="icon-line-columns"></i>Mega Menu</div></a></li>
+									<li><a href="#"><div><i class="icon-align-justify2"></i>Menu Styles</div></a>
+										<ul>
+											<li><a href="header-light.html"><div>Menu - Style 1</div></a></li>
+											<li><a href="menu-2.html"><div>Menu - Style 2</div></a></li>
+											<li><a href="menu-3.html"><div>Menu - Style 3</div></a></li>
+											<li><a href="menu-4.html"><div>Menu - Style 4</div></a></li>
+											<li><a href="menu-5.html"><div>Menu - Style 5</div></a></li>
+											<li><a href="menu-6.html"><div>Menu - Style 6</div></a></li>
+											<li><a href="menu-7.html"><div>Menu - Style 7</div></a></li>
+											<li><a href="menu-8.html"><div>Menu - Style 8</div></a></li>
+											<li><a href="menu-9.html"><div>Menu - Style 9</div></a></li>
+											<li><a href="menu-10.html"><div>Menu - Overlay</div></a></li>
+											<li><a href="split-menu.html"><div>Menu - Split Layout</div></a></li>
+										</ul>
+									</li>
+									<li><a href="#"><div><i class="icon-ok-sign"></i>Page Titles</div></a>
+										<ul>
+											<li><a href="page.html"><div>Left Align</div></a></li>
+											<li><a href="page-title-right.html"><div>Right Align</div></a></li>
+											<li><a href="page-title-center.html"><div>Center Align</div></a></li>
+											<li><a href="page-titledark.html"><div>Dark Style</div></a></li>
+											<li><a href="page-title-pattern.html"><div>Pattern Background</div></a></li>
+											<li><a href="page-title-parallax.html"><div>Parallax Background</div></a>
+												<ul>
+													<li><a href="page-title-parallax.html"><div>Default Header</div></a></li>
+													<li><a href="page-title-parallax-header.html"><div>Transparent Header</div></a></li>
+												</ul>
+											</li>
+											<li><a href="page-title-video.html"><div>HTML5 Video</div></a></li>
+											<li><a href="page-title-nobg.html"><div>No Background</div></a></li>
+											<li><a href="page-title-mini.html"><div>Mini Version</div></a></li>
+										</ul>
+									</li>
+									<li><a href="contact.html"><div><i class="icon-envelope-alt"></i>Contact Pages</div></a>
+										<ul>
+											<li><a href="contact.html">Contact 1</a></li>
+											<li><a href="contact-2.html">Contact 2</a></li>
+											<li><a href="contact-3.html">Contact 3</a></li>
+											<li><a href="contact-4.html">Contact 4</a></li>
+											<li><a href="contact-5.html">Contact 5</a></li>
+											<li><a href="contact-6.html">Contact 6</a></li>
+											<li><a href="contact-7.html">Contact 7</a></li>
+										</ul>
+									</li>
+									<li><a href="#footer" data-scrollto="#footer"><div><i class="icon-th"></i>Footers</div></a>
+										<ul>
+											<li><a href="sticky-footer.html"><div>Sticky Footer</div></a></li>
+											<li><a href="#footer" data-scrollto="#footer"><div>Footer - Layout 1</div></a></li>
+											<li><a href="footer-2.html#footer"><div>Footer - Layout 2</div></a></li>
+											<li><a href="footer-3.html#footer"><div>Footer - Layout 3</div></a></li>
+											<li><a href="footer-4.html#footer"><div>Footer - Layout 4</div></a></li>
+											<li><a href="footer-5.html#footer"><div>Footer - Layout 5</div></a></li>
+											<li><a href="footer-6.html#footer"><div>Footer - Layout 6</div></a></li>
+											<li><a href="footer-7.html#footer"><div>Footer - Layout 7</div></a></li>
+										</ul>
+									</li>
+									<li><a href="#"><div><i class="icon-calendar3"></i>Events</div></a>
+										<ul>
+											<li><a href="events-calendar.html"><div>Full Width Calendar</div></a></li>
+											<li><a href="events-list.html"><div>Events List</div></a>
+												<ul>
+													<li><a href="events-list.html"><div>Right Sidebar</div></a></li>
+													<li><a href="events-list-left-sidebar.html"><div>Left Sidebar</div></a></li>
+													<li><a href="events-list-both-sidebar.html"><div>Both Sidebar</div></a></li>
+													<li><a href="events-list-fullwidth.html"><div>Full Width</div></a></li>
+													<li><a href="events-list-parallax.html"><div>Parallax List</div></a></li>
+												</ul>
+											</li>
+											<li><a href="event-single.html"><div>Single Event</div></a>
+												<ul>
+													<li><a href="event-single-right-sidebar.html"><div>Right Sidebar</div></a></li>
+													<li><a href="event-single-left-sidebar.html"><div>Left Sidebar</div></a></li>
+													<li><a href="event-single-both-sidebar.html"><div>Both Sidebar</div></a></li>
+													<li><a href="event-single.html"><div>Full Width</div></a></li>
+												</ul>
+											</li>
+											<li><a href="event-single-full-width-image.html"><div>Single Event - Full</div></a>
+												<ul>
+													<li><a href="event-single-full-width-image.html"><div>Parallax Image</div></a></li>
+													<li><a href="event-single-full-width-map.html"><div>Google Map</div></a></li>
+													<li><a href="event-single-full-width-slider.html"><div>Slider Gallery</div></a></li>
+													<li><a href="event-single-full-width-video.html"><div>HTML5 Video</div></a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li><a href="modal-onload.html"><div><i class="icon-line-expand"></i>Modal OnLoad</div></a>
+										<ul>
+											<li><a href="modal-onload.html"><div>Simple Layout</div></a></li>
+											<li><a href="modal-onload-iframe.html"><div>Video iFrame</div></a></li>
+											<li><a href="modal-onload-subscribe.html"><div>Subscription Form</div></a></li>
+											<li><a href="modal-onload-common-height.html"><div>Common Height</div></a></li>
+											<li><a href="modal-onload-cookie.html"><div>Cookies Enabled</div></a></li>
+										</ul>
+									</li>
+									<li><a href="coming-soon.html"><div><i class="icon-time"></i>Coming Soon</div></a>
+										<ul>
+											<li><a href="coming-soon.html"><div>Simple Layout</div></a></li>
+											<li><a href="coming-soon-2.html"><div>Parallax Image</div></a></li>
+											<li><a href="coming-soon-3.html"><div>HTML5 Video</div></a></li>
+										</ul>
+									</li>
+									<li><a href="profile.html"><div><i class="icon-user"></i>User Profile</div></a></li>
+								</ul>
+							</li>
+							<li class="mega-menu"><a href="#"><div>Pages</div></a>
+								<div class="mega-menu-content style-2 clearfix">
+									<ul class="mega-menu-column col-md-3">
+										<li class="mega-menu-title"><a href="#"><div>Introduction</div></a>
+											<ul>
+												<li><a href="about.html"><div>About Us</div></a></li>
+												<li><a href="about-2.html"><div>About Us - Layout 2</div></a></li>
+												<li><a href="about-me.html"><div>About Me</div></a></li>
+												<li><a href="team.html"><div>Team Members</div></a></li>
+												<li><a href="jobs.html"><div>Careers</div></a></li>
+												<li><a href="side-navigation.html"><div>Side Navigation</div></a></li>
+												<li><a href="page-submenu.html"><div>Page Submenu</div></a></li>
+												<li><a href="sitemap.html"><div>Sitemap</div></a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="mega-menu-column col-md-3">
+										<li class="mega-menu-title"><a href="#"><div>Utility</div></a>
+											<ul>
+												<li><a href="services.html"><div>Services - Layout 1</div></a></li>
+												<li><a href="services-2.html"><div>Services - Layout 2</div></a></li>
+												<li><a href="services-3.html"><div>Services - Layout 3</div></a></li>
+												<li><a href="faqs.html"><div>FAQs - Layout 1</div></a></li>
+												<li><a href="faqs-2.html"><div>FAQs - Layout 2</div></a></li>
+												<li><a href="faqs-3.html"><div>FAQs - Layout 3</div></a></li>
+												<li><a href="faqs-4.html"><div>FAQs - Layout 4</div></a></li>
+												<li><a href="maintenance.html"><div>Maintenance Page</div></a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="mega-menu-column col-md-3">
+										<li class="mega-menu-title"><a href="#"><div>Layout Grids</div></a>
+											<ul>
+												<li><a href="full-width.html"><div>Full Width</div></a></li>
+												<li><a href="full-width-wide.html"><div>Full Width - Wide</div></a></li>
+												<li><a href="right-sidebar.html"><div>Right Sidebar</div></a></li>
+												<li><a href="left-sidebar.html"><div>Left Sidebar</div></a></li>
+												<li><a href="both-sidebar.html"><div>Both Sidebar</div></a></li>
+												<li><a href="both-right-sidebar.html"><div>Both Right Sidebar</div></a></li>
+												<li><a href="both-left-sidebar.html"><div>Both Left Sidebar</div></a></li>
+												<li><a href="blank-page.html"><div>Blank Page</div></a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="mega-menu-column col-md-3">
+										<li class="mega-menu-title"><a href="#"><div>Miscellaneous</div></a>
+											<ul>
+												<li><a href="login-register.html"><div>Login/Register</div></a></li>
+												<li><a href="login-register-2.html"><div>Login/Register - Style 2</div></a></li>
+												<li><a href="login-register-3.html"><div>Login/Register - Style 3</div></a></li>
+												<li><a href="login-1.html"><div>Login - Style 1</div></a></li>
+												<li><a href="login-2.html"><div>Login - Style 2</div></a></li>
+												<li><a href="404.html"><div>404 - Simple Layout</div></a></li>
+												<li><a href="404-2.html"><div>404 - Parallax Image</div></a></li>
+												<li><a href="404-3.html"><div>404 - HTML5 Video</div></a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="mega-menu"><a href="#"><div>Portfolio</div></a>
+								<div class="mega-menu-content style-2 clearfix">
+									<ul class="mega-menu-column col-5">
+										<li class="mega-menu-title"><a href="#"><div>Grids</div></a>
+											<ul>
+												<li><a href="portfolio-1.html"><div>1 Column</div></a></li>
+												<li><a href="portfolio-2.html"><div>2 Columns</div></a></li>
+												<li><a href="portfolio-3.html"><div>3 Columns</div></a></li>
+												<li><a href="portfolio.html"><div>4 Columns</div></a></li>
+												<li><a href="portfolio-5.html"><div>5 Columns</div></a></li>
+												<li><a href="portfolio-6.html"><div>6 Columns</div></a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="mega-menu-column col-5">
+										<li class="mega-menu-title"><a href="#"><div>Masonry</div></a>
+											<ul>
+												<li><a href="portfolio-mixed-masonry.html"><div>Mixed Columns</div></a></li>
+												<li><a href="portfolio-2-masonry.html"><div>2 Columns</div></a></li>
+												<li><a href="portfolio-3-masonry.html"><div>3 Columns</div></a></li>
+												<li><a href="portfolio-masonry.html"><div>4 Columns</div></a></li>
+												<li><a href="portfolio-5-masonry.html"><div>5 Columns</div></a></li>
+												<li><a href="portfolio-6-masonry.html"><div>6 Columns</div></a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="mega-menu-column col-5">
+										<li class="mega-menu-title"><a href="#"><div>Loading Styles</div></a>
+											<ul>
+												<li><a href="portfolio.html"><div>jQuery Filter</div></a></li>
+												<li><a href="portfolio-jpagination.html"><div>jQuery Pagination</div></a></li>
+												<li><a href="portfolio-infinity-scroll.html"><div>Infinity Scroll</div></a></li>
+												<li><a href="portfolio-ajax.html"><div>AJAX In Page</div></a></li>
+												<li><a href="portfolio-ajax-in-modal.html"><div>AJAX In Modal</div></a></li>
+												<li><a href="portfolio-filter-styles.html"><div>Filter Styles</div></a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="mega-menu-column col-5">
+										<li class="mega-menu-title"><a href="#"><div>Single Project</div></a>
+											<ul>
+												<li><a href="portfolio-single-extended.html"><div>Extended Item</div></a></li>
+												<li><a href="portfolio-single-fullwidth.html"><div>Parallax Image</div></a></li>
+												<li><a href="portfolio-single-gallery-full.html"><div>Slider Gallery</div></a></li>
+												<li><a href="portfolio-single-video-fullwidth-left-sidebar.html"><div>HTML5 Video</div></a></li>
+												<li><a href="portfolio-single-thumbs-right-sidebar.html"><div>Masonry Thumbs</div></a></li>
+												<li><a href="portfolio-single-video-both-sidebar.html"><div>Embed Video</div></a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="mega-menu-column col-5">
+										<li class="mega-menu-title"><a href="#"><div>Layouts</div></a>
+											<ul>
+												<li><a href="portfolio-nomargin.html"><div>Default</div></a></li>
+												<li><a href="portfolio-1-alt-right-sidebar.html"><div>Right Sidebar</div></a></li>
+												<li><a href="portfolio-3-left-sidebar.html"><div>Left Sidebar</div></a></li>
+												<li><a href="portfolio-2-both-sidebar.html"><div>Both Sidebar</div></a></li>
+												<li><a href="portfolio-fullwidth-notitle.html"><div>100% Width</div></a></li>
+												<li><a href="portfolio-parallax.html"><div>Parallax</div></a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="mega-menu"><a href="#"><div>Blog</div></a>
+								<div class="mega-menu-content style-2 clearfix">
+									<ul class="mega-menu-column col-md-3">
+										<li class="mega-menu-title"><a href="#"><div>Default</div></a>
+											<ul>
+												<li><a href="blog.html"><div>Right Sidebar</div></a></li>
+												<li><a href="blog-left-sidebar.html"><div>Left Sidebar</div></a></li>
+												<li><a href="blog-both-sidebar.html"><div>Both Sidebar</div></a></li>
+												<li><a href="blog-full-width.html"><div>Full Width</div></a></li>
+											</ul>
+										</li>
+										<li class="mega-menu-title"><a href="#"><div>Timeline</div></a>
+											<ul>
+												<li><a href="blog-timeline-right-sidebar.html"><div>Right Sidebar</div></a></li>
+												<li><a href="blog-timeline-left-sidebar.html"><div>Left Sidebar</div></a></li>
+												<li><a href="blog-timeline.html"><div>Full Width</div></a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="mega-menu-column col-md-3">
+										<li class="mega-menu-title"><a href="#"><div>Masonry</div></a>
+											<ul>
+												<li><a href="blog-masonry.html"><div>4 Columns</div></a></li>
+												<li><a href="blog-masonry-3.html"><div>3 Columns</div></a></li>
+												<li><a href="blog-masonry-2.html"><div>2 Columns</div></a></li>
+												<li><a href="blog-masonry-full.html"><div>100% Width</div></a></li>
+											</ul>
+										</li>
+										<li class="mega-menu-title"><a href="#"><div>Grid</div></a>
+											<ul>
+												<li><a href="blog-grid.html"><div>4 Columns</div></a></li>
+												<li><a href="blog-grid-3.html"><div>3 Columns</div></a></li>
+												<li><a href="blog-grid-2.html"><div>2 Columns</div></a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="mega-menu-column col-md-3">
+										<li class="mega-menu-title"><a href="#"><div>Small Thumbs</div></a>
+											<ul>
+												<li><a href="blog-small-left-sidebar.html"><div>Left Sidebar</div></a></li>
+												<li><a href="blog-small.html"><div>Right Sidebar</div></a></li>
+												<li><a href="blog-small-both-sidebar.html"><div>Both Sidebar</div></a></li>
+												<li><a href="blog-small-full-width.html"><div>Full Width</div></a></li>
+												<li><a href="blog-small-alt.html"><div>Alternate Layout</div></a></li>
+											</ul>
+										</li>
+										<li class="mega-menu-title"><a href="#"><div>Item Splitting</div></a>
+											<ul>
+												<li><a href="blog-grid.html"><div>Pagination</div></a></li>
+												<li><a href="blog-masonry.html"><div>Infinite Scroll</div></a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="mega-menu-column col-md-3">
+										<li class="mega-menu-title"><a href="#"><div>Single</div></a>
+											<ul>
+												<li><a href="blog-single.html"><div>Default Layout</div></a></li>
+												<li><a href="blog-single-left-sidebar.html"><div>Left Sidebar</div></a></li>
+												<li><a href="blog-single-full.html"><div>Full Width</div></a></li>
+												<li><a href="blog-single-small.html"><div>Small Image</div></a></li>
+												<li><a href="blog-single-split-right-sidebar.html"><div>Split Layout</div></a></li>
+											</ul>
+										</li>
+										<li class="mega-menu-title"><a href="#"><div>Comments Module</div></a>
+											<ul>
+												<li><a href="blog-single-left-sidebar.html#comments"><div>Facebook Comments</div></a></li>
+												<li><a href="blog-single-small.html#comments"><div>Disqus Comments</div></a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="shop.html"><div>Shop</div></a>
+								<ul>
+									<li><a href="shop.html"><div>4 Columns</div></a></li>
+									<li><a href="shop-3.html"><div>3 Columns</div></a>
+										<ul>
+											<li><a href="shop-3.html"><div>Full Width</div></a></li>
+											<li><a href="shop-3-right-sidebar.html"><div>Right Sidebar</div></a></li>
+											<li><a href="shop-3-left-sidebar.html"><div>Left Sidebar</div></a></li>
+										</ul>
+									</li>
+									<li><a href="shop-2.html"><div>2 Columns</div></a>
+										<ul>
+											<li><a href="shop-2-right-sidebar.html"><div>Right Sidebar</div></a></li>
+											<li><a href="shop-2-left-sidebar.html"><div>Left Sidebar</div></a></li>
+											<li><a href="shop-2-both-sidebar.html"><div>Both Sidebar</div></a></li>
+										</ul>
+									</li>
+									<li><a href="shop-1.html"><div>1 Columns</div></a>
+										<ul>
+											<li><a href="shop-1.html"><div>Full Width</div></a></li>
+											<li><a href="shop-1-right-sidebar.html"><div>Right Sidebar</div></a></li>
+											<li><a href="shop-1-left-sidebar.html"><div>Left Sidebar</div></a></li>
+											<li><a href="shop-1-both-sidebar.html"><div>Both Sidebar</div></a></li>
+										</ul>
+									</li>
+									<li><a href="shop-category-parallax.html"><div>Categories - Parallax</div></a></li>
+									<li><a href="shop-combination-filter.html"><div>Combination Filter</div></a></li>
+									<li><a href="shop-single.html"><div>Single Product</div></a>
+										<ul>
+											<li><a href="shop-single.html"><div>Full Width</div></a></li>
+											<li><a href="shop-single-right-sidebar.html"><div>Right Sidebar</div></a></li>
+											<li><a href="shop-single-left-sidebar.html"><div>Left Sidebar</div></a></li>
+											<li><a href="shop-single-both-sidebar.html"><div>Both Sidebar</div></a></li>
+										</ul>
+									</li>
+									<li><a href="cart.html"><div>Cart</div></a></li>
+									<li><a href="checkout.html"><div>Checkout</div></a></li>
+								</ul>
+							</li>
+							<li class="mega-menu"><a href="#"><div>Shortcodes</div></a>
+								<div class="mega-menu-content clearfix">
+									<ul class="mega-menu-column col-5">
+										<li><a href="animations.html"><div><i class="icon-magic"></i>Animations</div></a></li>
+										<li><a href="buttons.html"><div><i class="icon-link"></i>Buttons</div></a></li>
+										<li><a href="carousel.html"><div><i class="icon-heart3"></i>Carousel</div></a></li>
+										<li><a href="charts.html"><div><i class="icon-bar-chart"></i>Charts</div></a></li>
+										<li><a href="clients.html"><div><i class="icon-apple"></i>Clients</div></a></li>
+										<li><a href="columns-grids.html"><div><i class="icon-th-large"></i>Columns</div></a></li>
+										<li><a href="counters.html"><div><i class="icon-time"></i>Counters</div></a></li>
+										<li><a href="component-datatable.html"><div><i class="icon-table"></i>Data Tables</div></a></li>
+										<li><a href="component-datepicker.html"><div><i class="icon-calendar3"></i>Date &amp; Time Pickers</div></a></li>
+									</ul>
+									<ul class="mega-menu-column col-5">
+										<li><a href="dividers.html"><div><i class="icon-indent-right"></i>Dividers</div></a></li>
+										<li><a href="featured-boxes.html"><div><i class="icon-lightbulb"></i>Icon Boxes</div></a></li>
+										<li><a href="gallery.html"><div><i class="icon-picture"></i>Galleries</div></a></li>
+										<li><a href="headings-dropcaps.html"><div><i class="icon-pencil2"></i>Heading Styles</div></a></li>
+										<li><a href="icon-lists.html"><div><i class="icon-list-alt"></i>Icon Lists</div></a></li>
+										<li><a href="labels-badges.html"><div><i class="icon-plus-sign"></i>Labels</div></a></li>
+										<li><a href="lightbox.html"><div><i class="icon-resize-full"></i>Lightbox</div></a></li>
+										<li><a href="component-editable.html"><div><i class="icon-edit"></i>Editable Fields</div></a></li>
+										<li><a href="component-uploads.html"><div><i class="icon-line-upload"></i>File Uploads</div></a></li>
+									</ul>
+									<ul class="mega-menu-column col-5">
+										<li><a href="lists-panels.html"><div><i class="icon-th-list"></i>Lists &amp; Panels</div></a></li>
+										<li><a href="maps.html"><div><i class="icon-map-marker2"></i>Maps</div></a></li>
+										<li><a href="media-embeds.html"><div><i class="icon-play"></i>Media Embeds</div></a></li>
+										<li><a href="modal-popovers.html"><div><i class="icon-move"></i>Modal Boxes</div></a></li>
+										<li><a href="navigation.html"><div><i class="icon-align-justify2"></i>Navigations</div></a></li>
+										<li><a href="pagination-progress.html"><div><i class="icon-cogs"></i>Pagination</div></a></li>
+										<li><a href="pie-skills.html"><div><i class="icon-tasks"></i>Pies &amp; Skills</div></a></li>
+										<li><a href="component-range-slider.html"><div><i class="icon-line-move"></i>Range Slider</div></a></li>
+										<li><a href="component-ratings.html"><div><i class="icon-star3"></i>Star Ratings</div></a></li>
+									</ul>
+									<ul class="mega-menu-column col-5">
+										<li><a href="pricing.html"><div><i class="icon-dollar"></i>Pricing Boxes</div></a></li>
+										<li><a href="process-steps.html"><div><i class="icon-thumbs-up"></i>Process Steps</div></a></li>
+										<li><a href="promo-boxes.html"><div><i class="icon-rocket"></i>Promo Boxes</div></a></li>
+										<li><a href="quotes-blockquotes.html"><div><i class="icon-quote-left"></i>Blockquotes</div></a></li>
+										<li><a href="responsive.html"><div><i class="icon-laptop2"></i>Responsive</div></a></li>
+										<li><a href="sections.html"><div><i class="icon-folder-open"></i>Sections</div></a></li>
+										<li><a href="social-icons.html"><div><i class="icon-facebook2"></i>Social Icons</div></a></li>
+										<li><a href="component-select-picker.html"><div><i class="icon-select"></i>Select Picker</div></a></li>
+										<li><a href="component-select-box.html"><div><i class="icon-line-columns"></i>Select Boxes</div></a></li>
+									</ul>
+									<ul class="mega-menu-column col-5">
+										<li><a href="style-boxes.html"><div><i class="icon-exclamation-sign"></i>Alert Boxes</div></a></li>
+										<li><a href="styled-icons.html"><div><i class="icon-flag2"></i>Styled Icons</div></a></li>
+										<li><a href="tables.html"><div><i class="icon-table"></i>Tables</div></a></li>
+										<li><a href="tabs.html"><div><i class="icon-star3"></i>Tabs</div></a></li>
+										<li><a href="testimonials-twitter.html"><div><i class="icon-user4"></i>Testimonials</div></a></li>
+										<li><a href="thumbnails-slider.html"><div><i class="icon-camera3"></i>Thumbnails</div></a></li>
+										<li><a href="toggles-accordions.html"><div><i class="icon-ok-circle"></i>Toggles</div></a></li>
+										<li><a href="component-radios-switches.html"><div><i class="icon-line-square-check"></i>Radios &amp; Switches</div></a></li>
+										<li><a href="component-typeahead.html"><div><i class="icon-type"></i>Input Typeahead</div></a></li>
+									</ul>
+								</div>
+							</li>
+						</ul> -->
 
-<!-- Mirrored from demo.designing-world.com/classy-baa/classy/onepager/index-youtube-video.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Aug 2017 15:55:27 GMT -->
+						<!-- Top Cart
+						============================================= -->
+						<!-- <div id="top-cart">
+							<a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span>5</span></a>
+							<div class="top-cart-content">
+								<div class="top-cart-title">
+									<h4>Shopping Cart</h4>
+								</div>
+								<div class="top-cart-items">
+									<div class="top-cart-item clearfix">
+										<div class="top-cart-item-image">
+											<a href="#"><img src="canvashtml-cdn.semicolonweb.com/images/shop/small/1.jpg" alt="Blue Round-Neck Tshirt" /></a>
+										</div>
+										<div class="top-cart-item-desc">
+											<a href="#">Blue Round-Neck Tshirt</a>
+											<span class="top-cart-item-price">$19.99</span>
+											<span class="top-cart-item-quantity">x 2</span>
+										</div>
+									</div>
+									<div class="top-cart-item clearfix">
+										<div class="top-cart-item-image">
+											<a href="#"><img src="canvashtml-cdn.semicolonweb.com/images/shop/small/6.jpg" alt="Light Blue Denim Dress" /></a>
+										</div>
+										<div class="top-cart-item-desc">
+											<a href="#">Light Blue Denim Dress</a>
+											<span class="top-cart-item-price">$24.99</span>
+											<span class="top-cart-item-quantity">x 3</span>
+										</div>
+									</div>
+								</div>
+								<div class="top-cart-action clearfix">
+									<span class="fleft top-checkout-price">$114.95</span>
+									<button class="button button-3d button-small nomargin fright">View Cart</button>
+								</div>
+							</div>
+						</div> --><!-- #top-cart end -->
+
+						<!-- Top Search
+						============================================= -->
+						<div id="top-search">
+							<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+							<form action="search.html" method="get">
+								<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+							</form>
+						</div><!-- #top-search end -->
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<section id="slider" class="force-full-screen full-screen">
+
+			<div class="force-full-screen full-screen dark section nopadding nomargin noborder ohidden">
+
+				<div class="container clearfix">
+					<div class="slider-caption slider-caption-center">
+						<h2 data-animate="fadeInUp">Welcome to Kissdoodles</h2>
+						<p data-animate="fadeInUp" data-delay="200">Create just what you need for your Perfect Website. Choose from a wide range of Elements &amp; simply put them on our Canvas.</p>
+						<a data-animate="fadeInUp" data-delay="400" href="#" class="button button-border button-light button-rounded button-large noleftmargin nobottommargin" style="margin-top: 30px;">Start Browsing</a>
+						<!-- <a data-animate="fadeInUp" data-delay="600" href="#" class="button button-3d button-teal button-large nobottommargin" style="margin: 30px 0 0 10px;">Buy Now</a> -->
+					</div>
+				</div>
+				<div class="video-wrap">
+					<!-- <video poster="canvashtml-cdn.semicolonweb.com/images/videos/deskwork.jpg" preload="auto" loop autoplay muted> -->
+					<video poster="images/desk.jpg" preload="auto" loop autoplay muted>
+						<!-- <source src='http://46.101.174.22/images/videos/deskwork.mp4' type='video/mp4' /> -->
+						<!-- <source src='http://46.101.174.22/images/videos/deskwork.webm' type='video/webm' /> -->
+						<source src='images/videos/explore.mp4' type='video/mp4' />
+					</video>
+					<div class="video-overlay" style="background-color: rgba(0,0,0,0.45);"></div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="light">
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container clearfix">
+
+					<div class="col_half">
+						Copyrights &copy; 2017 All Rights Reserved by Kissdoodles.<br>
+						<!-- <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div> -->
+					</div>
+
+					<div class="col_half col_last tright">
+						<div class="fright clearfix">
+							<a href="#" class="social-icon si-small si-borderless si-facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-twitter">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-gplus">
+								<i class="icon-gplus"></i>
+								<i class="icon-gplus"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-pinterest">
+								<i class="icon-pinterest"></i>
+								<i class="icon-pinterest"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-vimeo">
+								<i class="icon-vimeo"></i>
+								<i class="icon-vimeo"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-github">
+								<i class="icon-github"></i>
+								<i class="icon-github"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-yahoo">
+								<i class="icon-yahoo"></i>
+								<i class="icon-yahoo"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-linkedin">
+								<i class="icon-linkedin"></i>
+								<i class="icon-linkedin"></i>
+							</a>
+						</div>
+
+						<div class="clear"></div>
+
+						<i class="icon-envelope2"></i> info@kissdoodles.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +91-11-6541-6369<span class="middot">&middot;</span> <!-- <i class="icon-skype2"></i> CanvasOnSkype -->
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="canvashtml-cdn.semicolonweb.com/js/jquery.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="canvashtml-cdn.semicolonweb.com/js/functions.js"></script>
+
+<!-- <div class="switcher clearfix"><div class="switcher-head"><span>Style Switcher<a href="#" id="switcher-reset-button" class="btn btn-danger fright btn-xs" style="margin-top: 12px;">Reset</a></span><div class="switcher-trigger icon-line-cog"></div></div><div class="switcher-body clearfix"> -->
+<!-- <div id="switcher-op-layout"><a href="#" data-layout="stretched" class="button button-3d button-black" style="margin: 0 10px 0 0;">Wide</a><a href="#" data-layout="boxed" class="button button-3d button-white button-light nomargin">Boxed</a></div><div class="line"></div> -->
+<!-- <div class="switcher-op-pt"><h5>Page Loading Styles:</h5><a href="?page-loader=1" class="button button-3d button-small noleftmargin">1</a><a href="?page-loader=2" class="button button-3d button-small">2</a><a href="?page-loader=3" class="button button-3d button-small noleftmargin">3</a><a href="?page-loader=4" class="button button-3d button-small">4</a><a href="?page-loader=5" class="button button-3d button-small noleftmargin">5</a><a href="?page-loader=6" class="button button-3d button-small">6</a><a href="?page-loader=7" class="button button-3d button-small">7</a><a href="?page-loader=8" class="button button-3d button-small">8</a><a href="?page-loader=9" class="button button-3d button-small noleftmargin">9</a><a href="?page-loader=10" class="button button-3d button-small">10</a><a href="?page-loader=11" class="button button-3d button-small">11</a><a href="?page-loader=12" class="button button-3d button-small noleftmargin norightmargin">12</a><a href="?page-loader=13" class="button button-3d button-small noleftmargin">13</a><a href="?page-loader=14" class="button button-3d button-small">14</a></div><div class="line"></div><div class="switcher-op-colors"><h5>Choose Color:</h5><ul id="switcher-option-color" class="switcher-op-selectors clearfix"><li style="background-color: #1abc9c;" data-color="1abc9c"></li><li style="background-color: #3498db;" data-color="3498db"></li><li style="background-color: #9b59b6;" data-color="9b59b6"></li><li style="background-color: #34495e;" data-color="34495e"></li><li style="background-color: #e67e22;" data-color="e67e22"></li><li style="background-color: #c0392b;" data-color="c0392b"></li><li style="background-color: #336E7B;" data-color="336E7B"></li><li style="background-color: #3A539B;" data-color="3A539B"></li><li style="background-color: #019875;" data-color="019875"></li></ul></div><div class="line"></div>
+ --><!-- <div class="switcher-op-patterns"><p><strong>Choose Pattern:</strong></p><ul id="switcher-option-pattern" class="switcher-op-selectors clearfix"><li style="background-image: url('switcher/patterns/light/pattern1.png');" data-url="switcher/patterns/light/pattern1.png"></li><li style="background-image: url('switcher/patterns/light/pattern3.png');" data-url="switcher/patterns/light/pattern3.png"></li><li style="background-image: url('switcher/patterns/light/pattern4.png');" data-url="switcher/patterns/light/pattern4.png"></li><li style="background-image: url('switcher/patterns/light/pattern6.png');" data-url="switcher/patterns/light/pattern6.png"></li><li style="background-image: url('switcher/patterns/light/pattern7.png');" data-url="switcher/patterns/light/pattern7.png"></li><li style="background-image: url('switcher/patterns/light/pattern8.png');" data-url="switcher/patterns/light/pattern8.png"></li><li style="background-image: url('switcher/patterns/light/pattern9.png');" data-url="switcher/patterns/light/pattern9.png"></li><li style="background-image: url('switcher/patterns/light/pattern10.png');" data-url="switcher/patterns/light/pattern10.png"></li><li style="background-image: url('switcher/patterns/light/pattern13.png');" data-url="switcher/patterns/light/pattern13.png"></li><li style="background-image: url('switcher/patterns/dark/pattern1.png');" data-url="switcher/patterns/dark/pattern1.png"></li><li style="background-image: url('switcher/patterns/dark/pattern2.png');" data-url="switcher/patterns/dark/pattern2.png"></li><li style="background-image: url('switcher/patterns/dark/pattern3.png');" data-url="switcher/patterns/dark/pattern3.png"></li><li style="background-image: url('switcher/patterns/dark/pattern4.png');" data-url="switcher/patterns/dark/pattern4.png"></li><li style="background-image: url('switcher/patterns/dark/pattern5.png');" data-url="switcher/patterns/dark/pattern5.png"></li><li style="background-image: url('switcher/patterns/dark/pattern6.png');" data-url="switcher/patterns/dark/pattern6.png"></li><li style="background-image: url('switcher/patterns/dark/pattern7.png');" data-url="switcher/patterns/dark/pattern7.png"></li><li style="background-image: url('switcher/patterns/dark/pattern8.png');" data-url="switcher/patterns/dark/pattern8.png"></li><li style="background-image: url('switcher/patterns/dark/pattern9.png');" data-url="switcher/patterns/dark/pattern9.png"></li></ul></div><div class="line"></div><div class="switcher-op-bgimages"><p><strong>Background Images:</strong></p><ul id="switcher-option-bgimage" class="switcher-op-selectors clearfix"><li data-url="images/parallax/home/1.jpg"><img src="switcher/bgimages/1.jpg" alt="Background Image 1" title="Background Image 1"/></li><li data-url="images/parallax/home/2.jpg"><img src="switcher/bgimages/2.jpg" alt="Background Image 2" title="Background Image 2"/></li><li data-url="images/parallax/home/4.jpg"><img src="switcher/bgimages/4.jpg" alt="Background Image 3" title="Background Image 3"/></li><li data-url="images/parallax/home/5.jpg"><img src="switcher/bgimages/5.jpg" alt="Background Image 4" title="Background Image 4"/></li><li data-url="images/parallax/home/6.jpg"><img src="switcher/bgimages/6.jpg" alt="Background Image 5" title="Background Image 5"/></li><li data-url="images/parallax/home/7.jpg"><img src="switcher/bgimages/7.jpg" alt="Background Image 6" title="Background Image 6"/></li><li data-url="images/parallax/home/9.jpg"><img src="switcher/bgimages/9.jpg" alt="Background Image 7" title="Background Image 7"/></li><li data-url="images/parallax/home/10.jpg"><img src="switcher/bgimages/10.jpg" alt="Background Image 8" title="Background Image 8"/></li><li data-url="images/parallax/home/11.jpg"><img src="switcher/bgimages/11.jpg" alt="Background Image 9" title="Background Image 9"/></li></ul></div><div class="line"></div> -->
+<!-- <div id="switcher-option-footer" class="switcher-op-footerc clearfix"><a href="http://themes.semicolonweb.com/html/canvas/dark/index-fullscreen-video.html" class="button button-3d button-large button-black center noleftmargin notopmargin nobottommargin" style="padding:0 25px;">Dark</a><a href="http://themes.semicolonweb.com/html/canvas/intro.html" class="button button-3d button-large button-black center nomargin" style="padding:0 25px;">Demos</a></div></div></div> -->
+
+<script type="text/javascript" src="switcher/switcher.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-23255544-12', 'auto');
+  ga('send', 'pageview');
+</script><script>jQuery(document).ready(function(e){e("#primary-menu > ul li").find('.new-badge').children("div").append('<span class="label label-danger" style="display:inline-block;margin-left:8px;position:relative;top:-1px;text-transform:none;">New</span>')});</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"839484a19a","applicationID":"5289971","transactionName":"ZQEDZxZUD0FZVkxfX1xLNEENGglGVVkXVVFcEgBAS1wPVl1NFVBFXggSUBZQBFwVQ1FSVV1KEVsU","queueTime":0,"applicationTime":1,"atts":"SUYAEV5OHE8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
